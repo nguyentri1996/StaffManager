@@ -1,0 +1,11 @@
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\bin\Debug\StaffManegement.exe.config
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\bin\Debug\StaffManegement.exe
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\bin\Debug\StaffManegement.pdb
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\bin\Debug\MySql.Data.dll
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.Properties.Resources.resources
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.View.Them.AddStaff.resources
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.csproj.GenerateResource.Cache
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.csproj.CoreCompileInputs.cache
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.exe
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.pdb
+C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.View.Xem.ListStaffBelongRoom.resources
