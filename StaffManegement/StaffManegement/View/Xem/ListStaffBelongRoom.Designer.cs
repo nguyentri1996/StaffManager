@@ -58,7 +58,7 @@
             this.btnXemDS = new System.Windows.Forms.Button();
             this.ButtonThemNV = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.listNV_find)).BeginInit();
             this.SuspendLayout();
             // 
@@ -347,24 +347,24 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnXoa
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(629, 463);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 31);
-            this.button1.TabIndex = 55;
-            this.button1.Text = "XÓA";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnXoa.BackColor = System.Drawing.Color.Red;
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnXoa.Location = new System.Drawing.Point(629, 463);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(101, 31);
+            this.btnXoa.TabIndex = 55;
+            this.btnXoa.Text = "XÓA";
+            this.btnXoa.UseVisualStyleBackColor = false;
             // 
             // ListStaffBelongRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 501);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.ButtonThemNV);
             this.Controls.Add(this.btnXemDS);
@@ -435,6 +435,6 @@
         private System.Windows.Forms.Button btnXemDS;
         private System.Windows.Forms.Button ButtonThemNV;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnXoa;
     }
 }
