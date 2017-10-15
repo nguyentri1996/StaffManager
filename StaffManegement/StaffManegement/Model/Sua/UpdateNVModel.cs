@@ -10,7 +10,7 @@ namespace StaffManegement.Model.Sua
 {
     class UpdateNVModel
     {
-
+        private bool kiemtra = false;
         public UpdateNVModel(String sql)
         {
             MySqlConnection conn   = DBUtils.GetDBConnection();
@@ -20,8 +20,12 @@ namespace StaffManegement.Model.Sua
             cmd.CommandText = sql;
             MySqlDataReader MyReader2;
             MyReader2 = cmd.ExecuteReader();
-            MessageBox.Show("Đã cập nhật !","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            kiemtra = true;
             conn.Close();
+        }
+        public bool getKiemtra()
+        {
+            return kiemtra;
         }
 
     }

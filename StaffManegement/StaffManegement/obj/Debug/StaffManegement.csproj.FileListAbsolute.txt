@@ -9,3 +9,14 @@ C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffMa
 C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.exe
 C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.pdb
 C:\Users\MINH TRI\source\repos\StaffManegement\StaffManegement\obj\Debug\StaffManegement.View.Xem.ListStaffBelongRoom.resources
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\bin\Debug\StaffManegement.exe.config
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\bin\Debug\StaffManegement.exe
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\bin\Debug\StaffManegement.pdb
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\bin\Debug\MySql.Data.dll
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\obj\Debug\StaffManegement.Properties.Resources.resources
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\obj\Debug\StaffManegement.View.Them.AddStaff.resources
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\obj\Debug\StaffManegement.View.Xem.ListStaffBelongRoom.resources
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\obj\Debug\StaffManegement.csproj.GenerateResource.Cache
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\obj\Debug\StaffManegement.csproj.CoreCompileInputs.cache
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\obj\Debug\StaffManegement.exe
+E:\PROJECT ON GIT\StaffManager\StaffManegement\StaffManegement\obj\Debug\StaffManegement.pdb

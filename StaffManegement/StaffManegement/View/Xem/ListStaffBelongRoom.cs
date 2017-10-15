@@ -77,10 +77,7 @@ namespace StaffManegement.View.Xem
         private void btnXemDS_Click(object sender, EventArgs e)
         {
             String sql = "SELECT nhanvien.ID, phongban.TENPHONG, HOTEN, NGAYSINH, CMND, DIACHI, DIENTHOAI, QUOCTICH, LOAI_NV, LUONGNGAY, LUONGTHANG, BACLUONG, TONGLUONG FROM nhanvien, phongban WHERE (nhanvien.ID_PHONG = phongban.ID)";
-            XemNVPresenter xemNVPresenter = new XemNVPresenter(this, sql);
-            DataTable dt = new DataTable();
-            xemNVPresenter.getDA().Fill(dt);
-            listNV_find.DataSource = dt;
+            XemNV(sql);
         }
 
         private void btnCapnhat_Click(object sender, EventArgs e)
@@ -117,7 +114,10 @@ namespace StaffManegement.View.Xem
                 "TONGLUONG = '"+ tongluong + "' " +
                 "WHERE ID = " + ID_NHANVIEN;
             UpdatePresenter updatePresenter = new UpdatePresenter(this, sql);
-
+            if(updatePresenter.getKiemtra() == true)
+            {
+                MessageBox.Show("Đã cập nhật !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             //try
             //{
             //    //This is my connection string i have assigned the database file address path  
@@ -165,16 +165,49 @@ namespace StaffManegement.View.Xem
         private void button2_Click(object sender, EventArgs e) // Xem lương cao nhất
         {
             String sql = "SELECT nhanvien.ID, phongban.TENPHONG, HOTEN, NGAYSINH, CMND, DIACHI, DIENTHOAI, QUOCTICH, LOAI_NV, LUONGNGAY, LUONGTHANG, BACLUONG, TONGLUONG FROM nhanvien, phongban WHERE ((nhanvien.ID_PHONG = phongban.ID) AND nhanvien.TONGLUONG = (SELECT MAX(TONGLUONG) FROM nhanvien))";
-            XemNVPresenter xemNVPresenter = new XemNVPresenter(this, sql);
-            DataTable dt = new DataTable();
-            xemNVPresenter.getDA().Fill(dt);
-            listNV_find.DataSource = dt;
+            XemNV(sql);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             AddStaff addStaff = new AddStaff();
             addStaff.Show();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            String sql = "DELETE FROM nhanvien WHERE nhanvien.ID  = "+ID_NHANVIEN;
+            UpdatePresenter updatePresenter = new UpdatePresenter(this, sql);
+            if (updatePresenter.getKiemtra() == true)
+            {
+                MessageBox.Show("Xóa thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                XemNV("SELECT nhanvien.ID, phongban.TENPHONG, HOTEN, NGAYSINH, CMND, DIACHI, DIENTHOAI, QUOCTICH, LOAI_NV, LUONGNGAY, LUONGTHANG, BACLUONG, TONGLUONG FROM nhanvien, phongban WHERE (nhanvien.ID_PHONG = phongban.ID)");
+                reset();
+            }
+        }
+
+        private void XemNV(string sql)
+        {
+            //String sql = "SELECT nhanvien.ID, phongban.TENPHONG, HOTEN, NGAYSINH, CMND, DIACHI, DIENTHOAI, QUOCTICH, LOAI_NV, LUONGNGAY, LUONGTHANG, BACLUONG, TONGLUONG FROM nhanvien, phongban WHERE (nhanvien.ID_PHONG = phongban.ID)";
+            XemNVPresenter xemNVPresenter = new XemNVPresenter(this, sql);
+            DataTable dt = new DataTable();
+            xemNVPresenter.getDA().Fill(dt);
+            listNV_find.DataSource = dt;
+        }
+        private void reset()
+        {
+             txtPhong.Text = "";
+             txtHoten.Text = "";
+             txtNgaysinh.Text = "";
+             txtCMND.Text = "";
+             txtDiachi.Text = "";
+             txtDienthoai.Text = "";
+             txtQuoctich.Text = "";
+             txtLoai.Text = "";
+             txtLuongngay.Text = "";
+             txtLuongthang.Text = "";
+             txtBacluong.Text = "";
+ 
         }
     }
 }

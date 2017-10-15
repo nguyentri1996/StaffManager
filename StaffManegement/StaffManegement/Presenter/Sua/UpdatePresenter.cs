@@ -11,12 +11,17 @@ namespace StaffManegement.Presenter.Sua
 {
     class UpdatePresenter
     {
-
+        private Boolean kiemtra;
         ListStaffBelongRoom listStaff;
         public UpdatePresenter(ListStaffBelongRoom _listStaff, String sql)
         {
             listStaff = _listStaff;
-            UpdateNVModel updateNVModel = new UpdateNVModel(sql); 
+            UpdateNVModel updateNVModel = new UpdateNVModel(sql);
+            kiemtra = updateNVModel.getKiemtra();
+        }
+        public bool getKiemtra()
+        {
+            return kiemtra;
         }
     }
 }
