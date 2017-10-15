@@ -58,6 +58,7 @@
             this.btnXemDS = new System.Windows.Forms.Button();
             this.ButtonThemNV = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.listNV_find)).BeginInit();
             this.SuspendLayout();
             // 
@@ -303,13 +304,14 @@
             // 
             // btnCapnhat
             // 
+            this.btnCapnhat.BackColor = System.Drawing.Color.Yellow;
             this.btnCapnhat.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapnhat.Location = new System.Drawing.Point(549, 458);
+            this.btnCapnhat.Location = new System.Drawing.Point(452, 463);
             this.btnCapnhat.Name = "btnCapnhat";
-            this.btnCapnhat.Size = new System.Drawing.Size(181, 31);
+            this.btnCapnhat.Size = new System.Drawing.Size(149, 31);
             this.btnCapnhat.TabIndex = 51;
             this.btnCapnhat.Text = "CẬP NHẬT";
-            this.btnCapnhat.UseVisualStyleBackColor = true;
+            this.btnCapnhat.UseVisualStyleBackColor = false;
             this.btnCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
             // 
             // btnXemDS
@@ -345,11 +347,24 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(629, 463);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 31);
+            this.button1.TabIndex = 55;
+            this.button1.Text = "XÓA";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // ListStaffBelongRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 501);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.ButtonThemNV);
             this.Controls.Add(this.btnXemDS);
@@ -420,5 +435,6 @@
         private System.Windows.Forms.Button btnXemDS;
         private System.Windows.Forms.Button ButtonThemNV;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
